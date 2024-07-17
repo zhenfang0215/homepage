@@ -23,10 +23,10 @@ jobs:
         with:
           node-version: "18.x"
       # 复制环境变量文件
-      - name: Copy .env.example
+      - name: Copy .env
         run: |
           if (-not (Test-Path .env)) {
-            Copy-Item .env.example .env
+            Copy-Item .env .env
           } else {
             Write-Host ".env file already exists. Skipping the copy step."
           }
