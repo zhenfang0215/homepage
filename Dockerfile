@@ -4,8 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-COPY .env.example .env
-# RUN [ ! -e ".env" ] && cp .env.example .env || true
+RUN [ ! -e ".env" ] && cp .env .env || true
 RUN npm run build
 
 # 最小化镜像
