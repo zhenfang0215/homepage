@@ -48,7 +48,7 @@ const siteName = import.meta.env.VITE_SITE_NAME;
       border-radius: 50%;
       border: 3px solid transparent;
       border-top-color: #fff;
-      animation: spin 1.8s linear infinite;
+      animation: spin 8s linear infinite;
       z-index: 2;
 
       &:before {
@@ -61,7 +61,7 @@ const siteName = import.meta.env.VITE_SITE_NAME;
         border-radius: 50%;
         border: 3px solid transparent;
         border-top-color: #a4a4a4;
-        animation: spin-reverse 0.6s linear infinite;
+        animation: spin-reverse 1.5s linear infinite;
       }
 
       &:after {
